@@ -1,8 +1,8 @@
 {
-  "name":"HomesteadDemo",
+  "name":"YummyRation",
   "version": "0.0.1",
   "private": true,
-  "description": "Web app for the Homestead Sporting Goods app",
+  "description": "YummyRation Catering Services app",
   "scripts": {
     "start": "node app.js"
   },
