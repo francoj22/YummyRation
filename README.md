@@ -1,5 +1,5 @@
 
-Sample web application using
+Sample web application that uses
 - Node.js
 - Express
 - Jade
