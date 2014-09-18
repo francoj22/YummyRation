@@ -5,6 +5,26 @@ block header
 	
 block content
 	div.container
-		h1 Welcome to YummyRation
-		h3 Leading Retailer of all Things Outdoorsy
-		img.img-responsive(src='/images/seafood.jpg', alt='Responsive image')
+		div.jumbotron
+			h1 Welcome to YummyRation!
+			p.lead
+				| YummyRation provides catering services and gives you access delicious frech cooked food. Make your choice from our menu for your next dinner, cocktail, or party.
+		.row.marketing
+			.col-lg-6
+				h4 Salads
+				p
+					a(href='/salad')
+						img.img-circle(src='/images/salad.jpg' alt'seefood pic' height='140', width='140')
+				h4 Seafood
+				p
+					a(href='/seafood')
+						img.img-circle(src='/images/seafood.jpg' alt'seefood pic' height='140', width='140')
+			.col-lg-6
+				h4 Meat
+				p
+					a(href='/steak')
+						img.img-circle(src='/images/steak.jpg' alt'seefood pic' height='140', width='140')
+				h4 Desserts
+				p
+					a(href='/pie')
+						img.img-circle(src='/images/rasp-pie.jpg' alt'seefood pic' height='140', width='140')
