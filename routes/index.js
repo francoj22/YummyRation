@@ -38,18 +38,3 @@ exports.contact = function(req, res) {
 	res.render('contact');
 };
 
-
-
-
-/*
-// Render the Bikes page
-exports.bikes = function(req, res) {
-	res.render('bikes', {
-		bicycles : specials.getSpecialsBikes()
-		// Replace the line above with this one to introduce a defect
-		// bicycles : specials.getSpecials()
-	});
-};
-
-*/
-
