@@ -8,13 +8,14 @@ block content
 	div.container
 		h2
 			em #{item.category}
-			|  >>    
+			|  ---      
 			em #{item.name}
 		br
 		img.img-responsive(src='#{item.image}' height='375', width='500')
 		
 		h3
-			| About this item:	#{item.description}
+			| Description:	
+		em #{item.description}
 		h3
 			| Price: #{item.price}
 		h3
