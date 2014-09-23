@@ -26,11 +26,14 @@ if ('development' === app.get('env')) {
 
 // Defines the routes for the app
 app.get('/', routes.home);
-app.get('/seafood', routes.seafood);
-app.get('/steak', routes.meat);
-app.get('/pie', routes.dessert);
-app.get('/salad', routes.vege);
 app.get('/contact', routes.contact);
+app.get('/menuitem/:id', routes.getDishById);
+
+
+// REST API Routes
+
+app.get('/api/menu/dishes', routes.getDishesAPI);
+app.get('/api/menu/:id', routes.getMenuItemAPI);
 
 
 

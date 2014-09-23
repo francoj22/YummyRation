@@ -1,0 +1,21 @@
+extends layout
+
+block header
+	include header-details
+	
+	
+block content
+	div.container
+		h2
+			em #{item.category}
+			|  >>    
+			em #{item.name}
+		br
+		img.img-responsive(src='#{item.image}' height='375', width='500')
+		
+		h3
+			| About this item:	#{item.description}
+		h3
+			| Price: #{item.price}
+		h3
+			| Customer Satisfaction (rating from 1 to 5): #{item.rating}
