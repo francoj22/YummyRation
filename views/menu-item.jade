@@ -7,16 +7,18 @@ block header
 block content
 	div.container
 		h2
-			em #{item.category}
-			|  ---      
-			em #{item.name}
+			| #{item.category}   
+			span.glyphicon.glyphicon-chevron-right
+			|   #{item.name}
 		br
 		img.img-responsive(src='#{item.image}' height='375', width='500')
 		
 		h3
 			| Description:	
-		em #{item.description}
+		h4
+			| #{item.description}
 		h3
 			| Price: #{item.price}
 		h3
-			| Customer Satisfaction (rating from 1 to 5): #{item.rating}
+			| Customer Rating : #{item.rating} 
+			span.glyphicon.glyphicon-star
