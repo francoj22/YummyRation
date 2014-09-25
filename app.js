@@ -32,8 +32,8 @@ app.get('/menuitem/:id', routes.getDishById);
 
 // REST API Routes
 
-app.get('/api/menu/dishes', routes.getDishesAPI);
-app.get('/api/menu/:id', routes.getMenuItemAPI);
+app.get('/api/menuitem/dishes', routes.getDishesAPI);
+app.get('/api/menuitem/:id', routes.getMenuItemAPI);
 
 
 
