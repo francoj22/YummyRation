@@ -4,13 +4,13 @@ var dishes = require('./dishes.js');
 
 // Render the Home page
 exports.home = function(req, res) {
-	res.render('home');
+    res.render('home');
 };
 
 
 // Render the Contact Us page
 exports.contact = function(req, res) {
-	res.render('contact');
+    res.render('contact');
 };
 
 
@@ -24,14 +24,14 @@ exports.getDishById = function(req, res) {
   
   
   for (var i=0, iLen=allDishes.length; i<iLen; i++) {
-    	if (allDishes[i].objectId == dishId) {
-    		dish = allDishes[i];
-     		break;
-    	}
-   };
+        if (allDishes[i].objectId === dishId) {
+            dish = allDishes[i];
+             break;
+        }
+   }
    res.render('menu-item', {
-		item : dish
-	});
+        item : dish
+    });
 };
 
 
@@ -49,18 +49,18 @@ exports.getDishesAPI = function(req, res) {
 
 // Return a dish identified by its ID
 exports.getMenuItemAPI = function(req, res) {
-	
+    
   var dishId = req.params.id;
   var allDishes = dishes.getDishes();
   var dish = "null";
   
   
   for (var i=0, iLen=allDishes.length; i<iLen; i++) {
-    	if (allDishes[i].objectId == dishId) {
-    		dish = allDishes[i];
-     		break;
-    	}
-   };
+        if (allDishes[i].objectId === dishId) {
+            dish = allDishes[i];
+             break;
+        }
+   }
    res.json(dish);
 };
 
