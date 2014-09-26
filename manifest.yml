@@ -1,10 +1,10 @@
 ---
 applications:
-- name: YummyRation
-  host: YummyRation-${random-word}
-  disk: 256M
-  command: node app.js
+- domain: mybluemix.net
   path: .
-  domain: mybluemix.net
   mem: 128M
+  host: YummyRation
+  name: YummyRation
+  command: node app.js
+  disk: 256M
   instances: 1
