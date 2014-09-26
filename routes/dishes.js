@@ -10,7 +10,7 @@ exports.getDishes = function() {
 		"rating" : "3",
 		"image"  : "/images/salad.jpg"
 		},
-		 {
+		{
 		"objectId" : "s202",
 		"category" : "Seafood",
 		"name" : "Fisherman's Platter",
@@ -19,7 +19,7 @@ exports.getDishes = function() {
 		"rating" : "3.8",
 		"image"  : "/images/seafood.jpg"
 		},
-		 {
+		{
 		"objectId" : "m303",
 		"category" : "Meat",
 		"name" : "Steack",
@@ -28,7 +28,7 @@ exports.getDishes = function() {
 		"rating" : "3.5",
 		"image"  : "/images/steak.jpg"
 		},
-		 {
+		{
 		"objectId" : "d404",
 		"category" : "Dessert",
 		"name" : "Raspberry Pie",
