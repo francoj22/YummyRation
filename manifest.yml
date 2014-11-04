@@ -2,7 +2,7 @@
 applications:
 - domain: mybluemix.net
   path: .
-  mem: 128M
+  memory: 128M
   host: YummyRation
   name: YummyRation
   command: node app.js
